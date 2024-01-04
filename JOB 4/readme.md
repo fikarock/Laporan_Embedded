@@ -37,6 +37,7 @@ Kode program dapat dilihat <a href="https://github.com/ghinazhafirah/EMBEDDED/bl
 https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/3874fd3b-d0b9-4b9d-9ab5-d3d577c6d99e
 
 ### d. Pembahasan
+ESP32 akan menampilkan daftar SSID Wi-Fi yang dapat diakses pada serial monitor. Program tersebut berusaha untuk menghubungkan ke jaringan WiFi yang telah disimpan dalam EEPROM (memori non-volatil). Jika upaya koneksi WiFi tidak berhasil atau terjadi penekanan tombol fisik pada pin D15 (GPIO15), program akan memulai konfigurasi sebagai titik akses (Access Point) guna melakukan pengaturan ulang WiFi. Hasil dari eksperimen ini adalah mencapai koneksi WiFi kampus dengan sukses.
 
 # B. Transmisi Data Menggunakan Protokol HTTP
 ## Metode Get
