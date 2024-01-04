@@ -27,7 +27,9 @@ studi kasus proyek.</p>
 ### Codingan 
 Script program dapat dilihat [disini](https://github.com/ghinazhafirah/EMBEDDED/blob/main/JOB%202.1/A.%20%20Memperoleh%20MAC%20Address/A._Memperoleh_MAC_Address_ESP32_Receiver.ino)
 
-### Hasil
+### Hasil dan Pembahasan
+Hasil dari percobaan ini adalah memperoleh MAC Address dari ESP32 yang ditampilkan melalui serial monitor. MAC Address yang diperoleh adalah 08:3A:F2:B7:C6:80.
+
 <img src="https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/b9e09121-7440-4218-893c-3fe93e07088d" width="480px">
 
 ## Project B -  ESP-NOW One-Way Point-to-Point Communication
