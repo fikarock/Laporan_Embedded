@@ -267,6 +267,10 @@ As Receiver
 
 
 B. Mengirim Pesan yang Berbeda Ke Beberapa Board ESP32
+
+### Hasil dan Pembahasan 
+Dalam percobaan ini, konfigurasi tetap serupa dengan sebelumnya, dimana satu ESP bertindak sebagai Master dan tiga ESP berperan sebagai Slave. Namun, perbedaannya terletak pada jenis data yang dikirimkan kepada setiap Slave. Slave 1 akan menerima data yang mengandung variabel dengan tipe data integer, Slave 2 menerima data variabel dengan tipe data float, dan Slave 3 menerima data variabel dengan tipe data string.
+
 As Sender
 
 https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/a6bf06d6-6053-4d4e-8a90-1f82928e7f0b
@@ -276,7 +280,8 @@ https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/a6bf06d6-6053-4d4e-8a
 A. Mengirim pesan sebagai sender
 script program as sender dapat dilihat [disini](https://github.com/ghinazhafirah/EMBEDDED/blob/main/JOB%202.1/D.%20%20One-Way%2C%20Many-to-One%20Communication/sender.ino)
 
-### Hasil dan Pembahasan 
+### Hasil dan Pembahasan
+Dalam percobaan ini, istilah "One" mengacu pada satu perangkat penerima tunggal, sementara "Many" merujuk pada banyak perangkat pengirim. Artinya, satu perangkat penerima menerima data dari beberapa perangkat pengirim secara bersamaan atau secara bergantian, tetapi tanpa memberikan respons atau balasan kepada perangkat pengirim. Dalam pengujian ini, digunakan 1 ESP32 sebagai penerima dan 3 ESP32 sebagai pengirim. Hasil yang dihasilkan adalah sebagai berikut.
 
 
 A. Mendapat pesan sebagai sender
@@ -288,11 +293,16 @@ https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/eb2f4305-7125-4bd1-a4
 1. Pengecekan Sensor DHT11 dapat dilihat [disini]()
 2. Two-Way Communication dapat dilihat [disini]()
    
-### Hasil
+### Hasil dan Pembahasan
+
 1. Pengecekan Sensor DHT11
+
+   Percobaan ini melibatkan pemeriksaan sensor DHT11 yang terhubung ke board ESP, diikuti oleh eksekusi program terkait. Apabila sensor beroperasi secara normal, hasil pembacaan suhu dan kelembaban oleh sensor akan ditampilkan di serial monitor.
 
 https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/eab40681-7d36-45c0-bdf2-5d73cbba71f6
 
 2. Two-Way Communication
+
+   Pada percobaan ini, terlibat penggunaan 2 board ESP32 yang saling berkomunikasi. Sensor pada ESP A mengirimkan hasilnya ke ESP B, dan sebaliknya, dalam interval waktu tertentu. Oleh karena itu, program ini menggabungkan fungsi pengiriman dan penerimaan data, serta melakukan pembacaan sensor secara bersamaan.
 
 https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/7e1a365f-d287-4e9c-89f8-6c2c290bb22d
