@@ -249,7 +249,9 @@ script program as receiver dapat dilihat [disini](https://github.com/ghinazhafir
 B. Mengirim Pesan yang Berbeda Ke Beberapa Board ESP32
 script program as sender dapat dilihat [disini](https://github.com/ghinazhafirah/EMBEDDED/blob/main/JOB%202.1/C.%20One-Way%2C%20One-to-Many%20Communication/B.%20Mengirim%20Pesan%20yang%20Berbeda%20Ke%20Beberapa%20Board%20ESP32/B%20SENDER.ino)
 
-### Hasil
+### Hasil dan Pembahasan 
+Pada percobaan ini, terlibat penggunaan 4 modul ESP32. Salah satu ESP32 akan berperan sebagai Master (pengirim), sedangkan tiga ESP32 lainnya berfungsi sebagai Slave (penerima). Peran Master adalah sebagai pengendali utama yang memulai dan mengatur proses komunikasi, sementara tiga perangkat Slave bertugas menerima instruksi atau data yang sama yang dikirimkan oleh Master. Awalnya, Master memasukkan alamat MAC dari setiap ESP yang berperan sebagai Slave. Selanjutnya, Master mengirimkan data yang identik kepada masing-masing Slave.
+
 A.  Mengirim Pesan yang Sama Ke Beberapa Board ESP32
 As Sender
 
@@ -274,7 +276,9 @@ https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/a6bf06d6-6053-4d4e-8a
 A. Mengirim pesan sebagai sender
 script program as sender dapat dilihat [disini](https://github.com/ghinazhafirah/EMBEDDED/blob/main/JOB%202.1/D.%20%20One-Way%2C%20Many-to-One%20Communication/sender.ino)
 
-### Hasil
+### Hasil dan Pembahasan 
+
+
 A. Mendapat pesan sebagai sender
 
 https://github.com/ghinazhafirah/EMBEDDED/assets/151806874/eb2f4305-7125-4bd1-a456-ab8dcb1cc950
